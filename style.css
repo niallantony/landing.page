@@ -19,7 +19,7 @@ li {
     margin: 0px 8px;
 }
 
-.header {
+.header.page {
     flex: 0 0 auto;
     height: 72px;
     background-color: #1F2937;
@@ -42,13 +42,60 @@ li {
 .content .frame-1 {
     background-color: #1F2937;
     color:#F9FAF8;
+    display: flex;
+    justify-content: center;
+    padding: 72px;
+    gap: 32px;
 }
 
-.content {
-    flex: 1
+.frame-1 .information {
+    width: 500px;
+    height: 300px;
+    flex: 0 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.information .header {
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+    flex: 0 0 auto;
+    text-align: left;
+}
+
+.information .para {
+    font-size: 18px;
+    color: #E5E7EB;
+    flex: 1;
+}
+
+.information button {
+    flex: 0 0 auto;
+}
+
+.frame-1 .image {
+    width: 500px;
+    flex: 0 1 auto;
+    background-color: #9999a9;
+}
+
+.content .frame-2 .header {
+    background-color: #FFF;
+    color:#1F2937;
+}
+
+.content.page {
+    flex: 1 1 auto; 
 }
 
 .footer {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1F2937;
+    color:#E9EAE8;
+    text-align: center;
     flex: 0 0 auto;
     height: 72px;
 }
