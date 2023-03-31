@@ -4,6 +4,7 @@ body {
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     border: 0px;
     padding: 0px;
+    margin: 0px;
 }
 
 ul {
@@ -37,6 +38,11 @@ li {
     margin: 8px 32px;
     font-size: 24px;
     font-weight: 700;
+    flex: 0 0 auto;
+}
+
+.header .link {
+    flex: 0 0 auto;
 }
 
 .content .frame-1 {
@@ -44,8 +50,9 @@ li {
     color:#F9FAF8;
     display: flex;
     justify-content: center;
-    padding: 72px;
+    padding: 100px 72px;
     gap: 32px;
+    height: 300px;
 }
 
 .frame-1 .information {
@@ -62,22 +69,35 @@ li {
     color: #F9FAF8;
     flex: 0 0 auto;
     text-align: left;
+    min-width: 280px;
 }
 
 .information .para {
     font-size: 18px;
     color: #E5E7EB;
-    flex: 1;
+    flex: 1 0 auto;
 }
 
 .information button {
     flex: 0 0 auto;
+    width: 100px;
+    font-weight: 700;
+    color: #F9FAF8;
+    background-color: #4575ff;
+    border:none;
+    padding: 8px;
+    border-radius: 8px;
 }
 
 .frame-1 .image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 500px;
     flex: 0 1 auto;
     background-color: #9999a9;
+    text-align: center;
+    min-width: 280px;
 }
 
 .content .frame-2 .header {
